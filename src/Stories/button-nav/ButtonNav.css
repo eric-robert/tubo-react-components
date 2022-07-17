@@ -1,4 +1,4 @@
-.button {
+.button-nav {
   position: relative;
   margin: 0px 10px;
   padding: 4px 10px;
@@ -8,15 +8,18 @@
   user-select: none;
   width: fit-content;
   font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
-.button-indicator {
+.button-nav-indicator {
   position: absolute;
-  left: -5px;
-  right: -5px;
-  bottom: 2px;
-  height: 3px;
-  opacity: 0.5;
+  left: 5px;
+  right: 5px;
+  bottom: 0px;
+  height: 2px;
   z-index: 2;
+  border-radius: 2px;
   transition: all 0.1s ease-in-out;
 }

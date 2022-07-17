@@ -12,7 +12,7 @@ interface ButtonProps {
 
 }
 
-export const Button = ( _ : ButtonProps ) => {
+export const FooterButton = ( _ : ButtonProps ) => {
 
     let { pallet, text, onClick, props } = _;
 
@@ -23,6 +23,6 @@ export const Button = ( _ : ButtonProps ) => {
 
     let style = { ... props}
 
-    return <div className="button" style={style}> { text } </div>
+    return <div className="button-footer" style={style}> { text } </div>
             
 };

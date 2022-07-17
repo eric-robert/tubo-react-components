@@ -1,19 +1,19 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Button } from './ButtonNav';
+import { NavButton } from './ButtonNav';
 
 export default {
 
   title: 'Buttons/NavButton',
-  component: Button,
+  component: NavButton,
 
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof NavButton>;
 
 
 // Templates
 
 export const Active = () => 
-  <Button text="Active" active />;
+  <NavButton text="Active" active />;
 
 export const NotActive = () => 
-  <Button text="Not Active" />;
+  <NavButton text="Not Active" />;

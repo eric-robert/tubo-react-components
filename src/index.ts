@@ -1,9 +1,16 @@
-import { Button as ButtonFooter } from './Stories/button-footer/ButtonFooter';
-import { Button as ButtonNav } from './Stories/button-nav/ButtonNav';
-import { Button as ButtonPlain } from './Stories/button-plain/ButtonPlain';
+import { FooterButton } from './Stories/button-footer/ButtonFooter';
+import { NavButton } from './Stories/button-nav/ButtonNav';
+import { PlainButton } from './Stories/button-plain/ButtonPlain';
+import { Footer, FooterCategory } from './Stories/component-footer/ComponentFooter';
+import { Header } from './Stories/component-header/ComponentHeader';
+import { Container } from './Stories/layout-container/LayoutContainer';
 
 export {
-    ButtonFooter,
-    ButtonNav,
-    ButtonPlain,
+    FooterButton,
+    NavButton,
+    PlainButton,
+    Footer,
+    FooterCategory,
+    Header,
+    Container
 }

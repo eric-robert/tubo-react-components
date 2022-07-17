@@ -1,26 +1,38 @@
 export interface ColorPallet {
 
+    // Text
+    text: string,
+    accentText: string;
 
-    text: string;
+    // Pallet
     primary: string;
+    offPrimary: string;
     error: string;
+    offError: string;
+
+    // Background   
+    background: string;
     offwhite: string;
     grey: string;
-    accentText: string;
-    offDanger: string;
+
 
 }
 
 export const defaultPallet = {
 
-    offwhite: '#fbfaff',
-    grey: '#ebd9fc',
+    // Text
+    text: '#20343B',
+    accentText: 'Black',
 
-    error: '#d90816',
-    offDanger: '#FDC4D1',
+    // Pallet
+    primary: '#DC5ECB',
+    offPrimary: '#FFD5F9',
+    error: '#FF1B51',
+    offError: '#FFB9CA',
     
-    primary: '#a713f6',
-    text: '#190028',
-    accentText: '#32004f',
+    // Background
+    offwhite: '#fbfaff',
+    grey: '#E0E0E0',
+    background: '#fff'
     
 } as ColorPallet

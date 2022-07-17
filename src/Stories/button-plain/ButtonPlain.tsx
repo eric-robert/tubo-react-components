@@ -7,6 +7,7 @@ interface ButtonProps {
     
     primary?: boolean;
     danger?: boolean;
+    disabled?: boolean;
     
     text: string;
     pallet?: ColorPallet;
@@ -17,9 +18,9 @@ interface ButtonProps {
 
 }
 
-export const Button = ( _ : ButtonProps ) => {
+export const PlainButton = ( _ : ButtonProps ) => {
 
-    let { primary, pallet, danger, text, onClick, props } = _;
+    let { primary, pallet, danger, text, onClick, props, disabled } = _;
 
     if (!pallet) pallet = defaultPallet
 
@@ -30,27 +31,41 @@ export const Button = ( _ : ButtonProps ) => {
 
     if (primary) {
         style.color = click ? pallet.offwhite : pallet.accentText
-        style.background = click ? pallet.primary : pallet.grey
-        style.border = `2px solid ${pallet.primary}`
-    } 
+        style.background = click ? pallet.primary : 'none'
+        style.background = hover && !click ? pallet.offPrimary : style.background
+        style.border = `1px solid ${pallet.primary}`
+    }
 
     else if ( danger ){
         style.color = click ? pallet.offwhite : pallet.accentText
-        style.background = click ? pallet.error : pallet.offDanger
-        style.border = `2px solid ${pallet.error}`
+        style.background = click ? pallet.error : 'none'
+        style.background = hover && !click ? pallet.offError : style.background
+        style.border = `1px solid ${pallet.error}`
+    }
+
+    else if ( disabled ){
+
+        style.color = pallet.accentText
+        style.background = pallet.grey
+        style.opacity = 0.5
+        style.border = `1px solid ${pallet.offwhite}`
+        style.cursorEffects = 'none'
+        style.cursor= 'not-allowed'
+
     }
 
     else {
         style.color = pallet.accentText
-        style.background = click ? pallet.grey : pallet.offwhite
-        style.border = `2px solid ${pallet.grey}`
+        style.background = click ? pallet.grey : 'none'
+        style.background = hover && !click ? pallet.offwhite : style.background
+        style.border = `1px solid ${pallet.grey}`
     } 
 
-    return <div className="button" style={style}>
+    return <div className="button-plain" style={style}>
         <MouseTracker 
             changeHover={setHover} 
             changeClick={setClick} 
-            onClick={onClick}>
+            onClick={disabled ? undefined : onClick}>
             
             { text }
 

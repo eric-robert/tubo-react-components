@@ -1,15 +1,15 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Button } from './ButtonFooter';
+import { FooterButton } from './ButtonFooter';
 
 export default {
 
   title: 'Buttons/FooterButton',
-  component: Button,
+  component: FooterButton,
 
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof FooterButton>;
 
 
 // Templates
 
-export const Example = () => <Button text='Link to thing' />;
+export const Example = () => <FooterButton text='Link to thing' />;

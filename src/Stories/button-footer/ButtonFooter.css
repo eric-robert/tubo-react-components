@@ -1,4 +1,4 @@
-.button {
+.button-footer {
   position: relative;
   margin: 0px 10px;
   padding: 4px 10px;
@@ -7,7 +7,17 @@
   transition: all 0.1s ease-in-out;
   user-select: none;
   width: fit-content;
-  font-size: 11pt;
-  font-weight: bold;
+  font-size: 10pt;
+
+
   font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+
+
+
+}
+
+.button-footer:hover {
+  text-decoration: underline;
 }

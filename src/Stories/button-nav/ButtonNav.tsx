@@ -13,7 +13,7 @@ interface ButtonProps {
 
 }
 
-export const Button = ( _ : ButtonProps ) => {
+export const NavButton = ( _ : ButtonProps ) => {
 
     let { active, pallet, text, onClick, props } = _;
 
@@ -31,12 +31,12 @@ export const Button = ( _ : ButtonProps ) => {
     } 
 
     else {
-        style.color = pallet.accentText
+        style.color = pallet.text
         indicatorStyle.background = hover ? pallet.grey : undefined
     } 
 
-    return <div className="button" style={style}>
-        <div className="button-indicator" style={indicatorStyle} />
+    return <div className="button-nav" style={style}>
+        <div className="button-nav-indicator" style={indicatorStyle} />
         <MouseTracker 
             changeHover={setHover} 
             changeClick={setClick} 
