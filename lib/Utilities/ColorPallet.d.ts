@@ -9,4 +9,7 @@ export interface ColorPallet {
     offwhite: string;
     grey: string;
 }
-export declare const defaultPallet: ColorPallet;
+export declare let defaultPallet: ColorPallet;
+export declare const getCurrentPallet: () => ColorPallet;
+export declare const setCurrentPallet: (pallet: ColorPallet) => void;
+export declare const randomColor: () => string;
