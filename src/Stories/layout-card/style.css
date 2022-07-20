@@ -1,0 +1,43 @@
+.turboComp-card {
+  position: relative;
+  width:fit-content;
+  height:fit-content;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  line-height: 25px;
+}
+
+.turboComp-card-divider {
+  position: absolute;
+  width: calc(100% + 40px);
+  height: 1px;
+  top: 17px;
+  left: -20px;
+}
+
+.turboComp-card-buttons {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: right;
+}
+
+.turboComp-card-buttonpos {
+  position: absolute;
+  right: -10px;
+  bottom: -5px;
+}
+
+.turboComp-card-label {
+  position: absolute;
+  top : -11px;
+  height: 14px;
+  left: 20px;
+  line-height: 14px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  text-transform: capitalize;
+}

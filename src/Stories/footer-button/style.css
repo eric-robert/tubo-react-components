@@ -1,0 +1,9 @@
+.turboComp-footer-button {
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.turboComp-footer-button:hover {
+  text-decoration: underline;
+}

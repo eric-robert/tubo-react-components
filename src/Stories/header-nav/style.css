@@ -1,0 +1,25 @@
+.turboComp-header-nav {
+  position: relative;
+  margin: 0px 10px;
+  padding: 4px 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  user-select: none;
+  width: fit-content;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.turboComp-header-nav-indicator {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  bottom: 0px;
+  height: 2px;
+  z-index: 2;
+  border-radius: 2px;
+  transition: all 0.1s ease-in-out;
+}

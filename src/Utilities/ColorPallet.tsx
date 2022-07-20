@@ -15,10 +15,9 @@ export interface ColorPallet {
     offwhite: string;
     grey: string;
 
-
 }
 
-export const defaultPallet = {
+export let defaultPallet = {
 
     // Text
     text: '#20343B',
@@ -33,6 +32,18 @@ export const defaultPallet = {
     // Background
     offwhite: '#fbfaff',
     grey: '#E0E0E0',
-    background: '#fff'
+    background: '#fff',
     
 } as ColorPallet
+
+export const getCurrentPallet = () => {
+    return defaultPallet
+}
+
+export const setCurrentPallet = (pallet : ColorPallet) => {
+    defaultPallet = pallet
+}
+
+export const randomColor = () => {
+    return '#' + Math.floor(Math.random() * 16777215).toString(16)
+}

@@ -3,7 +3,7 @@ import { ColorPallet, defaultPallet } from '../../Utilities/ColorPallet';
 import { MouseTracker } from '../../Utilities/MouseTracker';
 import './ButtonPlain.css';
 
-interface ButtonProps {
+export interface ButtonProps {
     
     primary?: boolean;
     danger?: boolean;

@@ -12,11 +12,13 @@ export default {
     {
       file: packageJson.main,
       format: "cjs",
+      exports: 'named',
       sourcemap: true
     },
     {
       file: packageJson.module,
       format: "esm",
+      exports: 'named',
       sourcemap: true
     }
   ],
@@ -24,7 +26,12 @@ export default {
     peerDepsExternal(),
     resolve(),
     commonjs(),
-    typescript({ useTsconfigDeclarationDir: true }),
+    typescript({ 
+      useTsconfigDeclarationDir: true ,
+      rollupCommonJSResolveHack: false,
+      clean: true,
+      tsconfig: './tsconfig.json' 
+    }),
     postcss({
         extensions: ['.css']
     })

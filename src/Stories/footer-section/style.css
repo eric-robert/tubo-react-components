@@ -1,0 +1,13 @@
+.turboComp-footer-sectiontext {
+  margin-bottom: 10px !important;
+  opacity: 0.5;
+}
+
+.turboComp-footer-sectioncontent {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+}

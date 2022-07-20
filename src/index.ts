@@ -1,16 +1,40 @@
-import { FooterButton } from './Stories/button-footer/ButtonFooter';
-import { NavButton } from './Stories/button-nav/ButtonNav';
 import { PlainButton } from './Stories/button-plain/ButtonPlain';
-import { Footer, FooterCategory } from './Stories/component-footer/ComponentFooter';
-import { Header } from './Stories/component-header/ComponentHeader';
-import { Container } from './Stories/layout-container/LayoutContainer';
+
+import { Footer } from './Stories/footer/component';
+import { FooterButton } from './Stories/footer-button/component'
+import { FooterSection } from './Stories/footer-section/component';
+
+import { Header } from './Stories/header/component';
+import { HeaderNav } from './Stories/header-nav/component';
+
+import { StyleProvider } from './Stories/system-style-provider/component';
+
+import { Debug } from './Stories/debug-indicator/component';
+
+import * as Color from './Utilities/ColorPallet';
+
+import { Position } from './Stories/layout-positions/component';
+import { Card } from './Stories/layout-card/component';
+import { Collect } from './Stories/layout-collect/component';
+
 
 export {
-    FooterButton,
-    NavButton,
-    PlainButton,
+    Color,
+    
     Footer,
-    FooterCategory,
+    FooterButton,
+    FooterSection,
+
     Header,
-    Container
+    HeaderNav,
+
+    StyleProvider,
+
+    PlainButton,
+
+    Debug,
+    
+    Position,
+    Card,
+    Collect
 }
